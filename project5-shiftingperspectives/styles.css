@@ -1,0 +1,126 @@
+
+/* Code adapted from https://www.w3schools.com/howto/howto_css_full_page.asp/ */
+body {
+  /* The image used */
+  background-image: url("background.JPG");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* end code adapted from https://www.w3schools.com/howto/howto_css_full_page.asp/*/
+p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 20px;
+  text-align: center;
+  top: 150px;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  /* to move the title text down you can use margin-top */
+  margin-top: 150px;
+
+}
+.desktop-section{
+  display: none; /* hide the desktop stuff on mobile */
+}
+
+.mobile-section {
+  margin-top: 60px;
+  font-family: "Inter", sans-serif;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.mobile-section h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.mobile-section p {
+  color: black;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+
+}
+@media (min-width: 768px) {
+  
+  body {
+    text-align: left;
+  }
+  .desktop-section{
+    display: block; /* show the desktop stuff on desktop */
+  }
+  .desktop-section {
+    position: relative;
+    height: 500px;
+  }
+  .mobile-section{
+    display: none;/*hide the mobile stuff on desktop */
+  }
+
+  .word {
+    font-family: "IBM Plex Mono", monospace;
+    position: absolute;
+    color: black;
+    background-color: white;
+    opacity: 0.7;
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 30px;
+  }
+
+  .one {
+    top: 20px;
+    right: 810px;
+  }
+
+  .two {
+    top: 150px;
+    right: 700px;
+  }
+
+  .three {
+    top: 20px;
+    left: 800px;
+  }
+
+  .four {
+    top: 130px;
+    right: 400px;
+  }
+
+  .five {
+    top: 300px;
+    left: 500px;
+  }
+}
+.back-btn {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 6px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.back-btn:hover {
+  background: black;
+  color: white;
+  transition: 0.2s;
+}
+
+

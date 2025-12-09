@@ -1,0 +1,70 @@
+body {
+  font-family: "IBM Plex Mono", monospace;
+  margin: 0;
+  padding: 16px;
+  background-image: url("bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  color: #f7f7ff;
+}
+
+section {
+  max-width: 600px;
+  margin: auto;
+  padding: 16px;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: none;
+  background: white;
+  color: #050510;
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.grid img {
+  width: 100%;
+  background: #0e0e18;
+  border-radius: 4px;
+}
+.back-btn {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 6px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.back-btn:hover {
+  background: black;
+  color: white;
+  transition: 0.2s;
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Your DJ Mix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap">
+</head>
+
+<body>
+
+  <section id="intro">
+    <h1>Choose Your DJ Mix</h1>
+    <p>Choose a BPM, choose a genre, then get your DJ mix board + songs.</p>
+    <button id="intro-button">Start</button>
+  </section>
+
+  <section id="odd-selection" class="hide">
+    <h2>Step 1: Choose BPM</h2>
+
+    <label><input type="radio" name="odd-selection" value="assets/bpm-slow.png">Slow</label>
+    <label><input type="radio" name="odd-selection" value="assets/bpm-medium.png">Medium</label>
+    <label><input type="radio" name="odd-selection" value="assets/bpm-fast.png">Fast</label>
+    <label><input type="radio" name="odd-selection" value="assets/bpm-superfast.png">Super Fast</label>
+
+    <button id="odd-button">Next</button>
+  </section>
+
+  <section id="even-selection" class="hide">
+    <h2>Step 2: Choose Genre</h2>
+
+    <label><input type="radio" id="genre-rap" name="even-selection" value="assets/genre-rap.png">Rap</label>
+    <label><input type="radio" id="genre-house" name="even-selection" value="assets/genre-house.png">House</label>
+    <label><input type="radio" id="genre-pop" name="even-selection" value="assets/genre-pop.png">Pop</label>
+    <label><input type="radio" id="genre-rnb" name="even-selection" value="assets/genre-rnb.png">R&B</label>
+
+    <button id="even-button">Show Mix</button>
+  </section>
+
+  <section id="quilt" class="hide">
+    <h2>Your DJ Mix Board</h2>
+
+    <div class="grid">
+      <img id="square1" src="assets/blank.png">
+      <img id="square2" src="assets/blank.png">
+      <img id="square3" src="assets/blank.png">
+      <img id="square4" src="assets/blank.png">
+      <img id="square5" src="assets/blank.png">
+      <img id="square6" src="assets/blank.png">
+      <img id="square7" src="assets/blank.png">
+      <img id="square8" src="assets/blank.png">
+      <img id="square9" src="assets/blank.png">
+    </div>
+
+    <h3>5 Song Recommendations</h3>
+    <div id="song-recs"></div>
+
+    <button id="back-button">Start Over</button>
+  </section>
+
+  <script src="main.js"></script>
+  <a href="../index.html" class="back-btn">← Back to Home</a>
+
+
+
+</body>
+</html>

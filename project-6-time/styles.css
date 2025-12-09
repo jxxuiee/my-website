@@ -1,0 +1,101 @@
+body {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+
+
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.head:hover {
+/*  code adapted from https://www.geeksforgeeks.org/css/css-pulse-animation//*/
+
+    filter: hue-rotate(60deg) contrast(1.2) brightness(1.1);
+/*  end code adapted from https://www.geeksforgeeks.org/css/css-pulse-animation//*/
+
+  transform: scale(1.05);
+}
+img {
+  width: 800px;
+  animation: pulse 2s ease-in-out infinite;
+}
+#aura{
+    position:absolute;
+    left: 2vw;
+    top: 5vh;
+    width: 500px;
+}
+.aura:hover {
+/*  code adapted from https://www.geeksforgeeks.org/css/css-pulse-animation//*/
+
+    filter: hue-rotate(100deg) contrast(1.2) brightness(1.1);
+/*  end code adapted from https://www.geeksforgeeks.org/css/css-pulse-animation//*/
+}
+#twopeople {
+    position:absolute;
+    right: 0vw;
+    bottom: 2vh;
+    width: 500px;
+}
+.twopeople:hover {
+/*  code adapted from https://www.geeksforgeeks.org/css/css-pulse-animation//*/
+
+    filter: hue-rotate(1000deg) contrast(1.2) brightness(1.1);
+/*  end code adapted from https://www.geeksforgeeks.org/css/css-pulse-animation//*/
+}
+
+
+.title {
+  color: white;
+  font-family:"IBM Plex Mono",monospace;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+@media(max-width: 768px){
+    
+    img{
+        width:100px;
+    }
+ :root{
+        --text-size-body: 16px;
+        --text-size-large: 16px;
+    }
+}
+.back-btn {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 6px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.back-btn:hover {
+  background: black;
+  color: white;
+  transition: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

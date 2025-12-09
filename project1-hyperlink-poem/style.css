@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  font-family: "IBM Plex Mono", monospace;
+}
+a{
+    font-size: 100px;
+    color: white;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+.top-left {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 150px;
+}
+.back-btn {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 6px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.back-btn:hover {
+  background: black;
+  color: white;
+  transition: 0.2s;
+}

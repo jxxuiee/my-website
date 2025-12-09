@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-image: url("background.jpg");
+  background-size: cover;          /* makes image fill the whole screen */
+  background-position: center;     /* centers the image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;    /* optional: makes it stay still while scrolling */
+  color: white;
+}
+
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;      /* make it big */
+  text-align: center;
+  margin-top: 300px;
+  line-height: 1.2;
+}
+
+
+/* NAV BAR */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-left {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* hamburger icon */
+.hamburger {
+  margin-left: auto;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-right {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  flex-direction: column;
+  gap: 6px;
+  background: none; /* no box */
+  padding: 0;       /* no padding */
+}
+
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* show menu when checkbox is checked */
+#menu-toggle:checked ~ .nav-right {
+  display: flex;
+}
+
+.nav-left,
+.nav-right a,
+.hamburger {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+@media (max-width: 768px) {
+  .nav-right a {
+    font-size: 12px;   /* smaller text on mobile */
+  }
+}
+.back-btn {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 6px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.back-btn:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+
